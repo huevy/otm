@@ -1,0 +1,30 @@
+@otmTextColor: #ddd;
+@otmNoticeColor: #CBF2FF;
+
+.otm {
+  &-form {
+    textarea {
+      width: 400px;
+      height: 100px;
+    }
+  }
+
+
+  &-notice {
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid @otmNoticeColor;
+    border: 1px solid darken(@otmNoticeColor, 10%);
+    color: darken(@otmNoticeColor, 50%);
+  }
+
+  &-text {
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 4px;
+    background: @otmTextColor;
+    border: 1px solid darken(@otmTextColor, 10%);
+    color: darken(@otmTextColor, 50%);
+  }
+
+}

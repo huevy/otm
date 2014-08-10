@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  p Вы можете написать сообщение и передать ссылку на него вашему товарищу.
+  p Мы гарантируем, что сообщение будет удалено сразу после прочтения.
+  p Таким образом никто, кроме получателя, не сможет его прочитать.
+
+  form.otm-form(action="message", method="post")
+    label
+      div Текст сообщения:
+      textarea(name="text")
+    div
+      button Создать сообщение!
+
+  pre.otm-text slifhsodifhdspfhi
+  pre.otm-notice slifhsodifhdspfhi
